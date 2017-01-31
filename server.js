@@ -48,8 +48,6 @@ app.get('/rank', function (req, res) {
   });
 });
 
-app.use(express.static(path.join(__dirname + '/css')));
-app.use(express.static(path.join(__dirname + '/images')));
 app.use(express.static(path.join(__dirname + '/src')));
 
 app.listen(port);
