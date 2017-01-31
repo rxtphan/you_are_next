@@ -19,6 +19,7 @@ function doIt() {
 
 function renderList(list) {
   $('#resultsBox').show();
+  $('#rankingsTable').empty();
 
   for (var i = 0; i < list.length; i++) {
     var player = list[i];
