@@ -1,0 +1,25 @@
+{
+  "name": "you_are_next",
+  "version": "0.0.1",
+  "description": "Bolo was the best",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "lodash": "^4.17.4",
+    "mysql": "^2.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rxtphan/you_are_next.git"
+  },
+  "author": "Richard Phan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rxtphan/you_are_next/issues"
+  },
+  "homepage": "https://github.com/rxtphan/you_are_next#readme"
+}

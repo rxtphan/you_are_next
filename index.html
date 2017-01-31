@@ -1,0 +1,45 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <script type='text/javascript' src='lib.js'></script>
+</head>
+
+<body>
+  <h1>pool dominator</h1>
+
+  <h2>Forwards</h2>
+  Goals: <input type='text' size='2' id='forwardGoals' value='3' />
+  Assists: <input type='text' size='2' id='forwardAssists' value='2' />
+
+  <h2>Defencemen</h2>
+  Goals: <input type='text' size='2' id='defensemanGoals' value='4' />
+  Assists: <input type='text' size='2' id='defensemanAssists' value='3' />
+
+  <h2>Goalies</h2>
+  Wins: <input type='text' size='2' id='goalieWins' value='5' />
+  OT losses: <input type='text' size='2' id='goalieOTLosses' value='2' />
+  Shootout losses: <input type='text' size='2' id='goalieShootoutLosses' value='3' />
+  Shutouts: <input type='text' size='2' id='goalieShutouts' value='5' />
+  Goals: <input type='text' size='2' id='goalieGoals' value='25' />
+  Assists: <input type='text' size='2' id='goalieAssists' value='5' />
+
+  <br />
+  <br />
+
+  <input type='button' value='Dominate!' onclick='doIt();'/>
+
+  <div id="resultsBox" style="display: none;">
+    <h2>Custom rankings</h2>
+    <table id='rankingsTable' style="border: 2px solid black;">
+      <tr>
+        <td><strong>Rank</strong></td>
+        <td><strong>Name</strong></td>
+        <td><strong>Position</strong></td>
+        <td><strong>Score</strong></td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
