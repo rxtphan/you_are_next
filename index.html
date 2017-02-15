@@ -2,43 +2,66 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"
+  >
   <script type='text/javascript' src='lib.js'></script>
 </head>
 
 <body>
-  <h1>pool dominator</h1>
+  <div class='jumbotron text-center'><h1>Pool Dominator</h1></div>
 
-  <h2>Forwards</h2>
-  Goals: <input type='text' size='2' id='forwardGoals' value='3' />
-  Assists: <input type='text' size='2' id='forwardAssists' value='2' />
+  <div class='container'>
 
-  <h2>Defencemen</h2>
-  Goals: <input type='text' size='2' id='defensemanGoals' value='4' />
-  Assists: <input type='text' size='2' id='defensemanAssists' value='3' />
+    <div class='panel panel-primary'>
+      <div class='panel-heading'>
+        <h4>Forwards</h4>
+      </div>
+      <div class='panel-body'>
+        Goals: <input type='text' size='2' id='forwardGoals' value='3' />
+        Assists: <input type='text' size='2' id='forwardAssists' value='2' />
+      </div>
+    </div>
 
-  <h2>Goalies</h2>
-  Wins: <input type='text' size='2' id='goalieWins' value='5' />
-  OT losses: <input type='text' size='2' id='goalieOTLosses' value='2' />
-  Shootout losses: <input type='text' size='2' id='goalieShootoutLosses' value='3' />
-  Shutouts: <input type='text' size='2' id='goalieShutouts' value='5' />
-  Goals: <input type='text' size='2' id='goalieGoals' value='25' />
-  Assists: <input type='text' size='2' id='goalieAssists' value='5' />
+    <div class='panel panel-success'>
+      <div class='panel-heading'>
+        <h4>Defencemen</h4>
+      </div>
+      <div class='panel-body'>
+        Goals: <input type='text' size='2' id='defensemanGoals' value='4' />
+        Assists: <input type='text' size='2' id='defensemanAssists' value='3' />
+      </div>
+    </div>
 
-  <br />
-  <br />
+    <div class='panel panel-warning'>
+      <div class='panel-heading'>
+        <h4>Goalies</h4>
+      </div>
+      <div class='panel-body'>
+        Wins: <input type='text' size='2' id='goalieWins' value='5' />
+        OT losses: <input type='text' size='2' id='goalieOTLosses' value='2' />
+        Shootout losses: <input type='text' size='2' id='goalieShootoutLosses' value='3' />
+        Shutouts: <input type='text' size='2' id='goalieShutouts' value='5' />
+        Goals: <input type='text' size='2' id='goalieGoals' value='25' />
+        Assists: <input type='text' size='2' id='goalieAssists' value='5' />
+      </div>
+    </div>
 
-  <input type='button' value='Dominate!' onclick='doIt();'/>
+    <input type='button' value='Dominate!' onclick='doIt();'/>
 
-  <div id="resultsBox" style="display: none;">
-    <h2>Custom rankings</h2>
-    <table id='rankingsTable' style="border: 2px solid black;">
-      <tr>
-        <td><strong>Rank</strong></td>
-        <td><strong>Name</strong></td>
-        <td><strong>Position</strong></td>
-        <td><strong>Score</strong></td>
-      </tr>
-    </table>
+    <div id="resultsBox" style="display: none;">
+      <h2>Custom rankings</h2>
+      <table id='rankingsTable' style="border: 2px solid black;">
+        <tr>
+          <td><strong>Rank</strong></td>
+          <td><strong>Name</strong></td>
+          <td><strong>Position</strong></td>
+          <td><strong>Score</strong></td>
+        </tr>
+      </table>
+    </div>
+
   </div>
 
 </body>
