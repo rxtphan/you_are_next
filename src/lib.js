@@ -21,6 +21,15 @@ function renderList(list) {
   $('#resultsBox').show();
   $('#rankingsTable').empty();
 
+  $('#rankingsTable').append(`
+    <tr style='background-color: #ccc;'>
+      <td><strong>Rank</strong></td>
+      <td><strong>Name</strong></td>
+      <td><strong>Position</strong></td>
+      <td><strong>Score</strong></td>
+    </tr>
+  `);
+
   for (var i = 0; i < list.length; i++) {
     var player = list[i];
 

@@ -1,5 +1,5 @@
 .main {
-  padding: 0 10px;
+  padding: 0 10px 10px 10px;
 }
 
 .form-control {
@@ -27,4 +27,12 @@ select.form-control {
 
 .row > div {
   margin: 3px 0;
+}
+
+.table td {
+  padding: 10px;
+}
+
+#resultsBox {
+  margin-top: 40px;
 }
