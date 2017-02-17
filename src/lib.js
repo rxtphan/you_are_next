@@ -1,6 +1,6 @@
 function doIt() {
   var rules = {};
-  var inputs = $('input[type="text"]');
+  var inputs = $('input[type="text"], select');
 
   for (var i = 0; i < inputs.length; i++) {
     var input = inputs[i];

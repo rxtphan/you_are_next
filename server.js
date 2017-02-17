@@ -49,6 +49,7 @@ app.get('/rank', function (req, res) {
 });
 
 app.use(express.static(path.join(__dirname + '/src')));
+app.use(express.static(path.join(__dirname + '/css')));
 
 app.listen(port);
 

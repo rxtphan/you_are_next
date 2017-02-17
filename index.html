@@ -5,50 +5,163 @@
   <link
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"
-  >
+  />
+  <link href="style.css" rel="stylesheet" />
   <script type='text/javascript' src='lib.js'></script>
 </head>
 
 <body>
   <div class='jumbotron text-center'><h1>Pool Dominator</h1></div>
-
-  <div class='container'>
-
+  <div class='main'>
     <div class='panel panel-primary'>
       <div class='panel-heading'>
-        <h4>Forwards</h4>
+        <div>Forwards</div>
       </div>
       <div class='panel-body'>
-        Goals: <input type='text' size='2' id='forwardGoals' value='3' />
-        Assists: <input type='text' size='2' id='forwardAssists' value='2' />
+        <div class='container-fluid'>
+          <div class='row'>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='forwardGoals'>Goals</label>
+              <select class='form-control' id='forwardGoals'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='forwardAssists'>Assists</label>
+              <select class='form-control' id='forwardAssists'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class='panel panel-success'>
       <div class='panel-heading'>
-        <h4>Defencemen</h4>
+        <div>Defencemen</div>
       </div>
       <div class='panel-body'>
-        Goals: <input type='text' size='2' id='defensemanGoals' value='4' />
-        Assists: <input type='text' size='2' id='defensemanAssists' value='3' />
+        <div class='container-fluid'>
+          <div class='row'>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='defensemanGoals'>Goals</label>
+              <select class='form-control' id='defensemanGoals'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='defensemanAssists'>Assists</label>
+              <select class='form-control' id='defensemanAssists'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class='panel panel-warning'>
       <div class='panel-heading'>
-        <h4>Goalies</h4>
+        <div>Goalies</div>
       </div>
       <div class='panel-body'>
-        Wins: <input type='text' size='2' id='goalieWins' value='5' />
-        OT losses: <input type='text' size='2' id='goalieOTLosses' value='2' />
-        Shootout losses: <input type='text' size='2' id='goalieShootoutLosses' value='3' />
-        Shutouts: <input type='text' size='2' id='goalieShutouts' value='5' />
-        Goals: <input type='text' size='2' id='goalieGoals' value='25' />
-        Assists: <input type='text' size='2' id='goalieAssists' value='5' />
+        <div class='container-fluid'>
+          <div class='row'>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='goalieWins'>Wins</label>
+              <select class='form-control' id='goalieWins'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='goalieOTLosses'>OT Losses</label>
+              <select class='form-control' id='goalieOTLosses'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='goalieShootoutLosses'>Shootout losses</label>
+              <select class='form-control' id='goalieShootoutLosses'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='goalieShutouts'>Shutouts</label>
+              <select class='form-control' id='goalieShutouts'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='goalieGoals'>Goals</label>
+              <select class='form-control' id='goalieGoals'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+              <label for='goalieAssists'>Assists</label>
+              <select class='form-control' id='goalieAssists'>
+                <option value=0>0</option>
+                <option value=1 selected=true>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <input type='button' value='Dominate!' onclick='doIt();'/>
+    <button class='btn btn-danger btn-lg btn-block' onclick='doIt();'>
+      Dominate!
+    </button>
 
     <div id="resultsBox" style="display: none;">
       <h2>Custom rankings</h2>
@@ -61,7 +174,6 @@
         </tr>
       </table>
     </div>
-
   </div>
 
 </body>
