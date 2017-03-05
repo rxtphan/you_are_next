@@ -1,12 +1,22 @@
 var express = require("express"),
+  exphbs  = require('express-handlebars'),
+  hbs = exphbs.create({}),
   mysql = require('mysql'),
   app  = express(),
   router = express.Router(),
   path = require("path"),
   port = 3000;
 
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
 app.get('/',function(req,res) {
   res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+app.get('/home', function (req, res) {
+    res.render('home');
 });
 
 app.get('/rank', function (req, res) {
