@@ -12,7 +12,7 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
-    res.render('home');
+    res.render('nhl');
 });
 
 app.get('/rank', function (req, res) {
