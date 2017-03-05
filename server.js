@@ -1,6 +1,6 @@
 var express = require("express"),
   exphbs  = require('express-handlebars'),
-  hbs = exphbs.create({}),
+  hbs = exphbs.create({ defaultLayout: 'main' }),
   mysql = require('mysql'),
   app  = express(),
   router = express.Router(),
@@ -11,11 +11,7 @@ var express = require("express"),
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-app.get('/',function(req,res) {
-  res.sendFile(path.join(__dirname + '/index.html'));
-});
-
-app.get('/home', function (req, res) {
+app.get('/', function (req, res) {
     res.render('home');
 });
 

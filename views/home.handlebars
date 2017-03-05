@@ -1,1 +1,157 @@
-<h1>Example App: Home.</h1>
+<div class='main'>
+  <div class='panel panel-primary'>
+    <div class='panel-heading'>
+      <div>Forwards</div>
+    </div>
+    <div class='panel-body'>
+      <div class='container-fluid'>
+        <div class='row'>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='forwardGoals'>Goals</label>
+            <select class='form-control' id='forwardGoals'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='forwardAssists'>Assists</label>
+            <select class='form-control' id='forwardAssists'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='panel panel-success'>
+    <div class='panel-heading'>
+      <div>Defencemen</div>
+    </div>
+    <div class='panel-body'>
+      <div class='container-fluid'>
+        <div class='row'>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='defensemanGoals'>Goals</label>
+            <select class='form-control' id='defensemanGoals'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='defensemanAssists'>Assists</label>
+            <select class='form-control' id='defensemanAssists'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='panel panel-warning'>
+    <div class='panel-heading'>
+      <div>Goalies</div>
+    </div>
+    <div class='panel-body'>
+      <div class='container-fluid'>
+        <div class='row'>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='goalieWins'>Wins</label>
+            <select class='form-control' id='goalieWins'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='goalieOTLosses'>OT Losses</label>
+            <select class='form-control' id='goalieOTLosses'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='goalieShootoutLosses'>Shootout losses</label>
+            <select class='form-control' id='goalieShootoutLosses'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='goalieShutouts'>Shutouts</label>
+            <select class='form-control' id='goalieShutouts'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='goalieGoals'>Goals</label>
+            <select class='form-control' id='goalieGoals'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+          <div class='col-xs-12 col-sm-6'>
+            <label for='goalieAssists'>Assists</label>
+            <select class='form-control' id='goalieAssists'>
+              <option value=0>0</option>
+              <option value=1 selected=true>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class='btn btn-danger btn-lg btn-block' onclick='doIt();'>
+    Dominate!
+  </button>
+
+  <div id="resultsBox" style="display: none;">
+    <h2 class='text-center'>Custom rankings</h2>
+    <table class='table table-striped table-bordered' id='rankingsTable'>
+    </table>
+  </div>
+</div>
