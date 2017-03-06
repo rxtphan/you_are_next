@@ -36,3 +36,7 @@ select.form-control {
 #resultsBox {
   margin-top: 40px;
 }
+
+select.form-control {
+  width: 50px;
+}
