@@ -25,7 +25,7 @@ module.exports = {
         { id: 'goalieShootoutLosses', name: 'Shootout losses', max: 5, default: 1 },
         { id: 'goalieShutouts', name: 'Shutouts', max: 5, default: 2 },
         { id: 'goalieGoals', name: 'Goals', max: 10, default: 10 },
-        { id: 'goalieAssists', name: 'Assistsx', max: 10, default: 5 }
+        { id: 'goalieAssists', name: 'Assists', max: 10, default: 5 }
       ]
     }
   ]
