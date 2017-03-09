@@ -44,8 +44,8 @@ _.each(data.players, (player) => {
       takeaways: total.takeaways,
       blocked_shots: total.blocked_shots,
       faceoffs: total.faceoffs,
-      faceoff_won: total.faceoffs_won,
-      faceoff_lost: total.faceoffs_lost,
+      faceoffs_won: total.faceoffs_won,
+      faceoffs_lost: total.faceoffs_lost,
       winning_goals: total.winning_goals,
       plus_minus: total.plus_minus,
       games_scratched: total.games_scratched,
@@ -69,12 +69,12 @@ _.each(data.players, (player) => {
       var goaltending = player.goaltending;
       var totalGoaltending = goaltending.total;
       var goalieStatsData = {
+        wins: totalGoaltending.wins,
+        losses: totalGoaltending.losses,
         shots_against: totalGoaltending.shots_against,
         goals_against: totalGoaltending.goals_against,
         saves: totalGoaltending.saves,
         shutouts: totalGoaltending.shutouts,
-        wins: totalGoaltending.wins,
-        losses: totalGoaltending.losses,
         overtime_losses: totalGoaltending.overtime_losses,
         penalty_saves: goaltending.penalty.saves,
         shootout_saves: goaltending.shootout.saves
