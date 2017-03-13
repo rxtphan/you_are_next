@@ -2,7 +2,8 @@
   {{#each positions}}
     <div class='panel {{color}}'>
       <div class='panel-heading'>
-        <div>{{name}}</div>
+        <span>{{name}}</span>
+        <span class='glyphicon glyphicon-plus-sign' onclick='toggleSectionVisibility(event)'></span>
       </div>
     </div>
     <div class='panel-body'>

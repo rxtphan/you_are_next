@@ -1,6 +1,6 @@
 function doIt() {
   var rules = {};
-  var inputs = $('input[type="text"], select');
+  var inputs = $('input[type="text"]:visible, select:visible');
 
   for (var i = 0; i < inputs.length; i++) {
     var input = inputs[i];
@@ -9,12 +9,14 @@ function doIt() {
 
   var params = $.param(rules);
 
-  $.ajax({ url: `http://localhost:3000/rank?${params}`})
-  .done(function (data) {
-    renderList(JSON.parse(data));
-  });
+  if (params) {
+    $.ajax({ url: `http://localhost:3000/rank?${params}`})
+    .done(function (data) {
+      renderList(JSON.parse(data));
+    });
+  }
 
-  console.log(params);
+  console.log('>>> params: ', params);
 }
 
 function renderList(list) {
@@ -41,5 +43,16 @@ function renderList(list) {
         <td>${player.score}</td>
       </tr>
     `);
+  }
+}
+
+function toggleSectionVisibility(e) {
+  var button = $(e.target);
+  var panelBody = button.closest('div.panel').next();
+  panelBody.toggleClass('collapse');
+  if (panelBody.hasClass('collapse')) {
+    button.removeClass('glyphicon-plus-sign').addClass('glyphicon-minus-sign')
+  } else {
+    button.removeClass('glyphicon-minus-sign').addClass('glyphicon-plus-sign')
   }
 }
