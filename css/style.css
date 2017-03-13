@@ -43,6 +43,12 @@ select.form-control {
   padding: 10px;
 }
 
+div.more-stats {
+  color: #888888;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
 #resultsBox {
   margin-top: 40px;
 }

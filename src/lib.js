@@ -56,3 +56,8 @@ function toggleSectionVisibility(e) {
     button.removeClass('glyphicon-minus-sign').addClass('glyphicon-plus-sign')
   }
 }
+
+function toggleMoreStats(e) {
+  var button = $(e.target);
+  button.closest('div.row').children('.js-more-stat').toggle();
+}

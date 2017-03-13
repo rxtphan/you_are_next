@@ -9,8 +9,14 @@
     <div class='panel-body'>
       <div class='container-fluid'>
         <div class='row'>
-          {{#each stats}}
+          {{#each stats.visible}}
             {{> stat id=id name=name max=max default=default}}
+          {{/each}}
+
+          <div class='col-xs-12 more-stats text-right' onclick='toggleMoreStats(event)'><strong>More stats</strong></div>
+
+          {{#each stats.hidden}}
+            {{> stat id=id name=name max=max default=default hidden=true class='js-more-stat'}}
           {{/each}}
         </div>
       </div>

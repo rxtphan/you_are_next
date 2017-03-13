@@ -1,4 +1,8 @@
-<div class='col-xs-12 col-sm-6'>
+{{#if_eq hidden true}}
+  <div class='col-xs-12 col-sm-6 {{class}}' style='display: none'>
+{{else}}
+  <div class='col-xs-12 col-sm-6 {{class}}'>
+{{/if_eq}}
   <label for={{id}}>{{name}}</label>
   <select class='form-control' id={{id}}>
     {{#times max}}
