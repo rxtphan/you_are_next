@@ -68,7 +68,22 @@ function toggleMoreStats(e) {
 }
 
 function togglePlayerRow(e) {
-  console.log('>>> CLICK >>>>');
   var row = $(e.target);
   row.closest('tr').toggleClass('selected');
+}
+
+function tabClick(e) {
+  var tab = $(e.target).closest('li');
+  var league = tab.attr('class');
+  var tabs = tab.closest('ul');
+  tabs.children().removeClass('active')
+  tab.addClass('active');
+
+  if (league === 'nhl') {
+    $('#nhl').show();
+    $('#other-leagues').hide();
+  } else {
+    $('#nhl').hide();
+    $('#coming-soon').show();
+  }
 }
