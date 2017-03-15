@@ -81,7 +81,7 @@ function tabClick(e) {
 
   if (league === 'nhl') {
     $('#nhl').show();
-    $('#other-leagues').hide();
+    $('#coming-soon').hide();
   } else {
     $('#nhl').hide();
     $('#coming-soon').show();
