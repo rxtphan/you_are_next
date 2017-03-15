@@ -51,9 +51,9 @@ function toggleSectionVisibility(e) {
   var panelBody = button.closest('div.panel').next();
   panelBody.toggleClass('collapse');
   if (panelBody.hasClass('collapse')) {
-    button.removeClass('glyphicon-plus-sign').addClass('glyphicon-minus-sign')
+    button.removeClass('glyphicon-minus-sign').addClass('glyphicon-plus-sign');
   } else {
-    button.removeClass('glyphicon-minus-sign').addClass('glyphicon-plus-sign')
+    button.removeClass('glyphicon-plus-sign').addClass('glyphicon-minus-sign');
   }
 }
 
