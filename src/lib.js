@@ -36,7 +36,7 @@ function renderList(list) {
     var player = list[i];
 
     $('#rankingsTable').append(`
-      <tr>
+      <tr onclick='togglePlayerRow(event)'>
         <td>${i + 1}</td>
         <td>${player.name}</td>
         <td>${player.position}</td>
@@ -60,4 +60,10 @@ function toggleSectionVisibility(e) {
 function toggleMoreStats(e) {
   var button = $(e.target);
   button.closest('div.row').children('.js-more-stat').toggle();
+}
+
+function togglePlayerRow(e) {
+  console.log('>>> CLICK >>>>');
+  var row = $(e.target);
+  row.closest('tr').toggleClass('selected');
 }

@@ -68,7 +68,7 @@ module.exports = function(req, res) {
     FROM players p, stats s
     WHERE p.player_id = s.player_id
     ORDER BY score DESC
-    LIMIT 100;`;
+    LIMIT 300;`;
 
   cx.query(qry, function (err, results, fields) {
     if (err) throw err;

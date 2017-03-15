@@ -56,3 +56,11 @@ div.more-stats {
 select.form-control {
   width: 52px;
 }
+
+table#rankingsTable tr {
+  cursor: pointer;
+}
+
+tr.selected {
+  background-color: #eee;
+}
