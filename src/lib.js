@@ -1,4 +1,4 @@
-function doIt() {
+function rank() {
   var rules = {};
   var inputs = $('input[type="text"]:visible, select:visible');
 
@@ -44,6 +44,11 @@ function renderList(list) {
       </tr>
     `);
   }
+
+  $('html, body').animate({
+      scrollTop: $('#rank-button').offset().top - 10
+  }, 500);
+
 }
 
 function toggleSectionVisibility(e) {

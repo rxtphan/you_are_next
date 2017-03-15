@@ -53,10 +53,6 @@ div.more-stats {
   margin-top: 40px;
 }
 
-select.form-control {
-  width: 52px;
-}
-
 table#rankingsTable tr {
   cursor: pointer;
 }
