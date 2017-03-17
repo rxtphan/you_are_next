@@ -7,9 +7,17 @@
   <select class='form-control' id={{id}}>
     {{#times max}}
       {{#if_eq ../default this}}
-        <option value={{this}} selected=true>{{this}}</option>
+        {{#if_eq ../negative true}}
+          <option value={{neg this}} selected=true>{{neg this}}</option>
+        {{else}}
+          <option value={{this}} selected=true>{{this}}</option>
+        {{/if_eq}}
       {{else}}
-        <option value={{this}}>{{this}}</option>
+        {{#if_eq ../negative true}}
+          <option value={{neg this}}>{{neg this}}</option>
+        {{else}}
+          <option value={{this}}>{{this}}</option>
+        {{/if_eq}}
       {{/if_eq}}
     {{/times}}
   </select>

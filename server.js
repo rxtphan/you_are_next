@@ -12,10 +12,13 @@ var hbs = exphbs.create({
     times: function (n, block) {
       var accum = '';
       for(var i = 0; i <= n; ++i)
-          accum += block.fn(i);
+        accum += block.fn(i);
       return accum;
     },
-    if_eq: function(a, b, opts) {
+    neg: function (num) {
+      return -1 * num;
+    },
+    if_eq: function (a, b, opts) {
       if(a == b) {
         return opts.fn(this);
       } else {

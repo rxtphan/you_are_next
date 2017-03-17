@@ -23,7 +23,7 @@ module.exports = {
           { id: 'forwardShorthandedGoals', name: 'Shorthanded goals', max: 5, default: 0 },
           { id: 'forwardShorthandedAssists', name: 'Shorthanded assists', max: 5, default: 0 },
           { id: 'forwardPenaltyGoals', name: 'Penalty goals', max: 5, default: 0 },
-          { id: 'forwardPenalties', name: 'Penalties', max: 5, default: 0 },
+          { id: 'forwardPenalties', name: 'Penalties', max: 5, default: 0, negative: true },
           { id: 'forwardPenaltyMinutes', name: 'Penalty minutes', max: 5, default: 0 },
           { id: 'forwardShootoutGoals', name: 'Shootout goals', max: 5, default: 0 }
         ]
