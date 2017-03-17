@@ -5,7 +5,7 @@
 {{/if_eq}}
   <label for={{id}}>{{name}}</label>
   <select class='form-control' id={{id}}>
-    {{#times max}}
+    {{#times max halfPoints}}
       {{#if_eq ../default this}}
         {{#if_eq ../negative true}}
           <option value={{neg this}} selected=true>{{neg this}}</option>

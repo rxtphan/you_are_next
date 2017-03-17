@@ -14,7 +14,7 @@ module.exports = {
         ],
         hidden: [
           { id: 'forwardGamesStarted', name: 'Games started', max: 5, default: 0 },
-          { id: 'forwardShots', name: 'Shots', max: 5, default: 0 },
+          { id: 'forwardShots', name: 'Shots', max: 5, default: 0, halfPoints: true },
           { id: 'forwardTakeaways', name: 'Takeaways', max: 5, default: 0 },
           { id: 'forwardMinutesPlayed', name: 'Minutes played', max: 5, default: 0 },
           { id: 'forwardWinningGoals', name: 'Winning goals', max: 5, default: 0 },

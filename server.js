@@ -9,10 +9,11 @@ var express = require("express"),
 var hbs = exphbs.create({
   defaultLayout: 'main',
   helpers: {
-    times: function (n, block) {
+    times: function (n, halfPoints, block) {
       var accum = '';
-      for(var i = 0; i <= n; ++i)
-        accum += block.fn(i);
+      var max = halfPoints ? 2 * n : n;
+      for(var i = 0; i <= max; ++i)
+        accum += block.fn(halfPoints ? i/2 : i);
       return accum;
     },
     neg: function (num) {
