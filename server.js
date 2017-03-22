@@ -33,7 +33,11 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
-    res.render('nhl', require('./config/nhl-setup'));
+  res.render('nhl', require('./config/nhl-setup'));
+});
+
+app.get('/howitworks', function (req, res) {
+  res.render('howitworks', { layout: 'notabs.handlebars'});
 });
 
 app.get('/rank', require('./src/rank'));

@@ -82,3 +82,30 @@ table#rankingsTable tr {
 tr.selected {
   background-color: #eee;
 }
+
+.how-it-works .title {
+  font-size: 55px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.how-it-works .container {
+  max-width: 1000px;
+  padding: 0 10px;
+}
+
+.step-row {
+  border-radius: 5px;
+  background-color: #ccc;
+  margin: 30px 0;
+}
+
+.step-label {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+
+.step-desc {
+  font-size: 20px;
+}
