@@ -21,6 +21,11 @@
   cursor: pointer;
 }
 
+.nav > li > a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .main {
   padding: 0 10px 10px 10px;
 }
@@ -105,6 +110,7 @@ tr.selected {
   border-radius: 5px;
   background-color: #ccc;
   margin: 30px 0;
+  padding: 10px 0;
 }
 
 .step-label {
