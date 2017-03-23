@@ -70,7 +70,8 @@ module.exports = {
           { id: 'goalieGoals', name: 'Goals', max: 25, default: 0 },
           { id: 'goalieAssists', name: 'Assists', max: 10, default: 0 },
           { id: 'goaliePenaltySaves', name: 'Penalty shot saves', max: 5, default: 0, halfPoints: true },
-          { id: 'goalieShootoutSaves', name: 'Shootout saves', max: 5, default: 0, halfPoints: true }
+          { id: 'goalieShootoutSaves', name: 'Shootout saves', max: 5, default: 0, halfPoints: true },
+          { id: 'goaliePenaltyMinutes', name: 'Penalty minutes', max: 10, default: 0 }
         ]
       }
     }

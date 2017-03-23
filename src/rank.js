@@ -18,7 +18,6 @@ module.exports = function(req, res) {
         WHEN position = 'LW' || position = 'RW' || position = 'C' THEN
           ${getRule('forwardGoals')} * goals +
           ${getRule('forwardAssists')} * assists +
-          ${getRule('forwardPenalties')} * penalties +
           ${getRule('forwardPenaltyMinutes')} * penalty_minutes +
           ${getRule('forwardShots')} * shots +
           ${getRule('forwardHits')} * hits +
@@ -38,7 +37,6 @@ module.exports = function(req, res) {
         WHEN position = 'D' THEN
           ${getRule('defensemanGoals')} * goals +
           ${getRule('defensemanAssists')} * assists +
-          ${getRule('defensemanPenalties')} * penalties +
           ${getRule('defensemanPenaltyMinutes')} * penalty_minutes +
           ${getRule('defensemanShots')} * shots +
           ${getRule('defensemanHits')} * hits +
@@ -63,6 +61,7 @@ module.exports = function(req, res) {
           ${getRule('goalieGoals')} * goals +
           ${getRule('goalieAssists')} * assists +
           ${getRule('goaliePenaltySaves')} * penalty_saves +
+          ${getRule('goaliePenaltyMinutes')} * penalty_minutes +
           ${getRule('goalieShootoutSaves')} * shootout_saves
       END as score
     FROM players p, stats s
