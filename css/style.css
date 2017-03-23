@@ -22,8 +22,14 @@
 }
 
 .nav > li > a {
+  color: black;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.nav > li.active > a {
+  color: #b00;
+  font-weight: bold;
 }
 
 .main {
@@ -32,6 +38,16 @@
 
 .form-control {
   width: auto;
+}
+
+.panel {
+  border-color: #444;
+}
+
+.panel .panel-heading {
+  background-color: #444;
+  border-color: #444;
+  color: white;
 }
 
 .panel-body {
@@ -89,8 +105,13 @@ tr.selected {
   background-color: #eee;
 }
 
+.action-btn {
+  background-color: #b00;
+}
+
 .how-it-works-link {
   bottom: 11px;
+  color: #888;
   position: absolute;
   right: 10px;
 }
