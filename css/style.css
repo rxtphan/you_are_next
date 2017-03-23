@@ -56,8 +56,9 @@
 }
 
 .panel-heading span {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .panel-heading .glyphicon {
@@ -107,6 +108,8 @@ tr.selected {
 
 .action-btn {
   background-color: #b00;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .how-it-works-link {
@@ -124,7 +127,7 @@ tr.selected {
 
 .how-it-works .container {
   max-width: 1000px;
-  padding: 0 10px;
+  padding: 0 10px 10px 10px;
 }
 
 .step-row {
