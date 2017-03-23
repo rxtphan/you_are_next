@@ -1,9 +1,9 @@
 <div id='nhl' class='main'>
   {{#each positions}}
-    <div class='panel {{color}}'>
+    <div class='panel {{color}}' onclick='toggleSectionVisibility(event)'>
       <div class='panel-heading'>
         <span>{{name}}</span>
-        <span class='glyphicon glyphicon-minus-sign' onclick='toggleSectionVisibility(event)'></span>
+        <span class='panel-collapse-btn glyphicon glyphicon-minus-sign'></span>
       </div>
     </div>
     <div class='panel-body'>

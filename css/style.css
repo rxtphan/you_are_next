@@ -42,6 +42,7 @@
 
 .panel {
   border-color: #444;
+  cursor: pointer;
 }
 
 .panel .panel-heading {
@@ -62,7 +63,6 @@
 }
 
 .panel-heading .glyphicon {
-  cursor: pointer;
   float: right;
   margin-top: 4px;
 }

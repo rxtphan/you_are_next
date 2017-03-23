@@ -52,8 +52,9 @@ function renderList(list) {
 }
 
 function toggleSectionVisibility(e) {
-  var button = $(e.target);
-  var panelBody = button.closest('div.panel').next();
+  var panel = $(e.target).closest('div.panel');
+  var panelBody = panel.next();
+  var button = panel.find('.panel-collapse-btn')
   panelBody.toggleClass('collapse');
   if (panelBody.hasClass('collapse')) {
     button.removeClass('glyphicon-minus-sign').addClass('glyphicon-plus-sign');
