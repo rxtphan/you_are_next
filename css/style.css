@@ -112,11 +112,20 @@ tr.selected {
   text-transform: uppercase;
 }
 
+.feedback-link {
+  color: #b00;
+  position: absolute;
+  right: 10px;
+  text-transform: uppercase;
+  top: 10px;
+}
+
 .how-it-works-link {
   bottom: 11px;
   color: #888;
   position: absolute;
   right: 10px;
+  text-transform: uppercase;
 }
 
 .how-it-works .title {
