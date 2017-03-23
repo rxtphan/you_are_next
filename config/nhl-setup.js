@@ -2,7 +2,6 @@ module.exports = {
   positions: [
     {
       name: 'Forwards',
-      color: 'panel-primary',
       stats: {
         visible: [
           { id: 'forwardGoals', name: 'Goals', max: 10, default: 1 },
@@ -30,7 +29,6 @@ module.exports = {
     },
     {
       name: "Defensemen",
-      color: 'panel-success',
       stats: {
         visible: [
           { id: 'defensemanGoals', name: 'Goals', max: 10, default: 1 },
@@ -58,7 +56,6 @@ module.exports = {
     },
     {
       name: "Goalies",
-      color: 'panel-warning',
       stats: {
         visible: [
           { id: 'goalieWins', name: 'Wins', max: 10, default: 1 },
