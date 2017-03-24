@@ -1,6 +1,5 @@
 var express = require("express"),
   exphbs  = require('express-handlebars'),
-  mysql = require('mysql'),
   app  = express(),
   router = express.Router(),
   path = require("path"),
@@ -46,5 +45,9 @@ app.use(express.static(path.join(__dirname + '/src')));
 app.use(express.static(path.join(__dirname + '/css')));
 
 app.listen(port);
+
+setInterval(function () {
+  require('./src/db').cx().query('SELECT 1');
+}, 10000);
 
 console.log("Running at Port 3000")
