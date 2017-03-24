@@ -1,12 +1,4 @@
-var mysql = require('mysql');
-
 module.exports = function(req, res) {
-  var cx = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    database : 'hockey'
-  });
-
   var rules = req.query;
   function getRule(name) {
     return rules[name] || 0;
@@ -69,6 +61,7 @@ module.exports = function(req, res) {
     ORDER BY score DESC
     LIMIT 300;`;
 
+  var cx = require('./db').cx();
   cx.query(qry, function (err, results, fields) {
     if (err) throw err;
 

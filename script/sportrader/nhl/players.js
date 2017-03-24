@@ -1,14 +1,9 @@
-var mysql = require('mysql');
 var _ = require('lodash');
 var rp = require('request-promise-native');
+var db = require('../../../src/db');
 
 // Set up DB connection
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  database : 'hockey'
-});
-
+var connection = db.cx();
 var getPlayersForTeam;
 
 connection.query('SELECT team_id FROM teams', function (error, results, fields) {

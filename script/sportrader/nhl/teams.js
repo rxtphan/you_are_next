@@ -1,13 +1,9 @@
-var mysql = require('mysql');
 var _ = require('lodash');
 var data = require('./teams.json');
+var db = require('../../../src/db');
 
 // Set up DB connection
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  database : 'hockey'
-});
+var connection = db.cx();
 
 _.each(data.conferences, (conference) => {
   _.each(conference.divisions, (division) => {
